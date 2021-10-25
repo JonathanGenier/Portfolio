@@ -1,7 +1,11 @@
+/*==MODULES===================================================================*/
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/index.module.scss'
+
+/*==COMPONENTS================================================================*/
+/*==STYLES====================================================================*/
+import styles from '../styles/pages/about.module.scss'
+
+/*============================================================================*/
 
 const Page: NextPage = () => {
   return (

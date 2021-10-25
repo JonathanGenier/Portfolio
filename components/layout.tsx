@@ -1,5 +1,11 @@
+/*==MODULES===================================================================*/
 import { FunctionComponent, ReactNode, useEffect, useState } from 'react'
+
+/*==COMPONENTS================================================================*/
 import WideNavbar from './navbar/wide/navbar'
+
+/*==STYLES====================================================================*/
+/*============================================================================*/
 
 interface Props {
     children: ReactNode

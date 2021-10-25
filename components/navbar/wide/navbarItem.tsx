@@ -1,7 +1,14 @@
-import { MouseEvent, FunctionComponent } from 'react'
+/*==MODULES===================================================================*/
+import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
+/*==COMPONENTS================================================================*/
+/*==STYLES====================================================================*/
 import styles from '../../../styles/components/navbar/wide/navbarItem.module.scss'
+
+/*============================================================================*/
+
+
 
 interface Props {
     text: string,

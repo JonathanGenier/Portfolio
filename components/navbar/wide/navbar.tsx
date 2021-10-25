@@ -1,9 +1,14 @@
+/*==MODULES===================================================================*/
 import { FunctionComponent, useEffect, useState } from 'react'
 import { useRouter } from 'next/dist/client/router'
+
+/*==COMPONENTS================================================================*/
 import NavbarItem from './navbarItem'
 
+/*==STYLES====================================================================*/
 import styles from '../../../styles/components/navbar/wide/navbar.module.scss'
-import { HtmlProps } from 'next/dist/shared/lib/utils'
+
+/*============================================================================*/
 
 interface Props {
 
