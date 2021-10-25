@@ -1,5 +1,6 @@
 /*==MODULES===================================================================*/
 import { FunctionComponent, useEffect, useState } from 'react'
+import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/dist/client/router'
 
 /*==COMPONENTS================================================================*/
@@ -16,15 +17,16 @@ interface Props {
 
 const Navbar: FunctionComponent<Props> = (props: Props) => {
 
+    let { t } = useTranslation('common')
     let router = useRouter()
     let [activeItem, setActiveItem] = useState(router.route)
 
     let navItems = [
-        { id: "home", text: "Home", route: '/' },
-        { id: "about", text: "About", route: '/about' },
-        { id: "skills", text: "Skills", route: '/skills' },
-        { id: "projects", text: "Projects", route: '/projects' },
-        { id: "contact", text: "Contact", route: '/contact' }
+        { id: "home", text: t('navbar_home'), route: '/' },
+        { id: "about", text: t('navbar_about'), route: '/about' },
+        { id: "skills", text: t('navbar_skills'), route: '/skills' },
+        { id: "projects", text: t('navbar_projects'), route: '/projects' },
+        { id: "contact", text: t('navbar_contact'), route: '/contact' }
     ]
 
     useEffect(() => {
