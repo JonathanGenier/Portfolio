@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    position: fixed;
+    right: 30px; 
+    top: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-animation: fadeIn 3s ; /* Chrome, Safari, Opera */
+    animation: fadeIn 3s ;
+
+    span {
+        color: white;
+        font-size: 22px;
+        margin: auto 0;
+        
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin: auto 10px auto 0px;
+        background: url('../../public/images/icons/language/language_inactive.png');
+        background-size: 100%;
+        background-position: center;
+    }
+}
+
+.container:hover {
+    span {
+        color: #16c0f0;
+        text-decoration: underline;
+    }
+    
+    .icon  {
+        background: url('../../public/images/icons/language/language_active.png');
+        background-size: 100%;
+        background-position: center;
+    }
+}

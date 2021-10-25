@@ -1,5 +1,6 @@
 /*==MODULES===================================================================*/
 import { FunctionComponent, ReactNode, useEffect, useState } from 'react'
+import LanguageToggler from './languageToggler'
 
 /*==COMPONENTS================================================================*/
 import WideNavbar from './navbar/wide/navbar'
@@ -43,6 +44,7 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
                 {props.children}
             </main>
             {renderNavbar()}
+            <LanguageToggler/>
         </div>
     )
 }
