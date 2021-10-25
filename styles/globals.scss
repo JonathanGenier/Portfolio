@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Expanding Container */
+.exp-c {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Restricted container */
+.res-c {
+  display: flex;
+  width: 100%;
+  max-width: 1520px;
+  margin: 0px auto;
+}

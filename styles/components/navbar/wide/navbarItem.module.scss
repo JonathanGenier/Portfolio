@@ -1,0 +1,47 @@
+$navbarItemheight: 40px;
+
+.container {
+    display: flex;
+    height: $navbarItemheight;
+    text-decoration: none;
+
+    span {
+        color: white;
+        font-size: 22px;
+        margin: auto 0;
+    }
+
+    .point, .point_active {
+        width: 12px;
+        height: 12px;
+        margin: auto 10px auto 0px;
+    }
+    
+    .point {
+        background: url('../../../../public/images/icons/point/point_inactive.png');
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .point_active {
+        background: url('../../../../public/images/icons/point/point_active.png');
+        background-size: 100%;
+        background-position: center;
+    }   
+}
+
+.container:hover {
+
+    span {
+        color: #16c0f0;
+        text-decoration: underline;
+    }
+    
+    .point, .point_active  {
+        background: url('../../../../public/images/icons/point/point_hover.png');
+        background-size: 100%;
+        background-position: center;
+    }
+
+}
+
