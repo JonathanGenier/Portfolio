@@ -7,11 +7,6 @@ import '../styles/globals.scss'
 function Portfolio({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <head>
-        <title>Portfolio</title>
-        <meta name="description" content="Jonathan Genier's portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <Component {...pageProps} />
     </Layout>
   )

@@ -19,7 +19,7 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
         updateViewport();
         window.addEventListener('resize', updateViewport)
     }, [])
-    
+
     const renderNavbar = () => {
 
         if (viewport.width < 992) {
@@ -33,7 +33,6 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
 
     return (
         <div>
-            
             <main className="main">
                 {props.children}
             </main>

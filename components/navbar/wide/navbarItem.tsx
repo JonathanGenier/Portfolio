@@ -6,13 +6,13 @@ import styles from '../../../styles/components/navbar/wide/navbarItem.module.scs
 interface Props {
     text: string,
     active: boolean,
-    page: string
+    route: string
 }
 
 const Navbar: FunctionComponent<Props> = (props: Props) => {
 
     return (
-        <Link href={`/${props.page}`}>
+        <Link href={props.route}>
             <a className={styles.container}>
                 <div className={styles['point' + (props.active ? '_active' : '')]} />
                 <span>{props.text}</span>
