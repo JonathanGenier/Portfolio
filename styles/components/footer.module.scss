@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    span {
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        padding-right: 5px;
+    }
+
+    hr {
+        width: 75px;
+        border: 1px solid #16c0f0;
+    }
+}

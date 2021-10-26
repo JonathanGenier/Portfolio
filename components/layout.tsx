@@ -4,8 +4,12 @@ import LanguageToggler from './languageToggler'
 
 /*==COMPONENTS================================================================*/
 import WideNavbar from './navbar/wide/navbar'
+import Menu from './menu'
+import Footer from './footer'
 
 /*==STYLES====================================================================*/
+import styles from '../styles/components/layout.module.scss'
+
 /*============================================================================*/
 
 interface Props {
@@ -39,12 +43,27 @@ const Layout: FunctionComponent<Props> = (props: Props) => {
     }
 
     return (
-        <div>
-            <main className="main">
-                {props.children}
+        <div className={styles.pageWrapper}>
+            <header className="exp-c">
+                <div className={styles.content + " res-c"}>
+                    <Menu/>
+                    <LanguageToggler/> 
+                </div>
+            </header>
+
+            <main className="exp-c">
+                <div className="res-c">
+                    {props.children}
+                </div>
             </main>
-            {renderNavbar()}
-            <LanguageToggler/>
+            
+            <footer className="exp-c">
+                <div className={styles.content + " res-c"}>
+                    <Footer/>
+                </div>
+            </footer>
+            {/* {renderNavbar()}
+            <LanguageToggler/> */}
         </div>
     )
 }

@@ -1,0 +1,52 @@
+.container {
+    display: inline-block;
+    margin: auto 20px auto auto;
+    position: relative;
+
+    .marker {
+        display: flex;
+        
+        span {
+            color: white;
+            font-size: 22px;
+            margin: auto 0;
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            margin: auto 10px auto 0px;
+            background: url('../../public//images/icons/menu/menu_inactive.png');
+            background-size: 100%;
+            background-position: center;
+        }
+    }
+}
+
+.container:hover {
+
+    .marker {
+        border-bottom: 1px solid #16c0f0;
+        span {
+            color: #16c0f0;
+            cursor: pointer;
+        }
+    
+        .icon {
+            background: url('../../public//images/icons/menu/menu_active.png');
+            background-size: 100%;
+            background-position: center;
+        }
+    }
+    .nav {
+        display: block;
+        border-left: 1px solid #16c0f0;
+    }
+
+    
+}
+
+.nav {
+    position: absolute;
+    display: none;
+}

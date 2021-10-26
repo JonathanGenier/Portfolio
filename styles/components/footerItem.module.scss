@@ -1,0 +1,51 @@
+$animationTime: 0.3s;
+
+.container {
+    display: flex;
+    text-decoration: none;
+
+    section {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: auto 5px;
+    }
+}
+
+.top {
+    opacity: 1;
+}
+
+.bottom {
+    opacity: 0;
+}
+
+.top, .bottom {
+    position: absolute;
+    width: 100%;
+}
+
+.top, .bottom:hover {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: $animationTime;
+    animation-fill-mode: both;
+}
+
+.bottom, .top:hover {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in-out;
+    animation-duration: $animationTime;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+

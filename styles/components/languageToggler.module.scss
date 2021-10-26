@@ -1,9 +1,10 @@
 .container {
     display: flex;
-    position: fixed;
-    right: 30px; 
-    top: 30px;
-    padding-left: 30px;
+    margin: auto 0;
+    // position: fixed;
+    // right: 30px; 
+    // top: 30px;
+    // padding-left: 30px;
     text-decoration: none;
     -webkit-animation: fadeIn 3s ; /* Chrome, Safari, Opera */
     animation: fadeIn 3s ;

@@ -3,34 +3,31 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 /*==COMPONENTS================================================================*/
+import FooterItem from './footerItem'
+
 /*==STYLES====================================================================*/
-import styles from '../styles/components/navbar.module.scss'
+import styles from '../styles/components/footer.module.scss'
 
 /*============================================================================*/
 
 interface Props {
-    
+
 }
 
 const Footer: FunctionComponent<Props> = (props: Props) => {
     return (
-        <nav className={styles.container}>
-            <ul>
-                <li>
-                    <div>
-                        <img/>
-                        <Link href='/'>
-                            <a>Home</a>
-                        </Link>
-                        
-                    </div>
-                </li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-            </ul>
-        </nav>
+        <div className={styles.container}>
+            <div className={styles.rightContainer}>
+                <span>Follow me</span>
+                <hr/>
+                <FooterItem route="/" icon="facebook" />
+                <FooterItem route="/" icon="linkedin" />
+                <FooterItem route="/" icon="indeed" />
+                <FooterItem route="/" icon="github" />
+                <FooterItem route="/" icon="stackoverflow" />
+            </div>
+
+        </div>
     )
 }
 
